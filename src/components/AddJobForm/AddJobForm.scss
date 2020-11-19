@@ -1,0 +1,30 @@
+.add-job-form {
+  &__section {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__label {
+    flex-basis: 33%;
+    margin-right: 5px;
+  }
+  &__input {
+    &--error {
+      border: 1px solid red;
+    }
+    flex-basis: 66%;
+    min-width: 0;
+    height: 30px;
+  }
+  &__select {
+    &--error {
+      border: 1px solid red;
+    }
+    flex-basis: 67%;
+    min-width: 0;
+    height: 35px;
+    cursor: pointer;
+  }
+}

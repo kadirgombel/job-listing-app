@@ -1,0 +1,27 @@
+.job-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* &:not(:last-child) {
+    margin-bottom: 10px;
+  } */
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+  &__items {
+    margin-top: 15px;
+  }
+  &__search {
+    height: 30px;
+    flex-basis: 10%;
+  }
+  &__seperator {
+    width: 100%;
+    border: 2px solid #bbb;
+    background-color: #bbb;
+    border-radius: 3px;
+  }
+}

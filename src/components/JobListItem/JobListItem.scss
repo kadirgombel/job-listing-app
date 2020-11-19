@@ -1,0 +1,33 @@
+.job-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &--urgent {
+    background-color: #dd403a;
+  }
+  &--regular {
+    background-color: #dced31;
+  }
+  &--trivial {
+    background-color: #3581b8;
+  }
+  &__operation {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  &__job-name {
+    flex-basis: 66%;
+    @media only screen and (max-width: 600px) {
+      flex-basis: 50%;
+    }
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+}

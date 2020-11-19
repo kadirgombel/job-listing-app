@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #00000071;
+  &__dialog {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 600px) {
+      width: 250px;
+    }
+    width: 350px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  &__content {
+    padding: 20px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  &__close {
+    cursor: pointer;
+    padding: 7px;
+  }
+}
